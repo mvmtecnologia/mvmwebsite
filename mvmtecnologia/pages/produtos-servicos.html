@@ -1,51 +1,47 @@
-<html lang="pt_br" xmlns:fb="http://ogp.me/ns/fb#">
-<head>
-{% include 'head.html' %}
-<title>Produtos e Serviços :: MVM Tecnologia</title>
-</head>
-<body>
-	<script>
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id))
-				return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<div class="container-narrow">
-		{% include 'menu.html' %}
-		<hr>
-		<noscript>Para sua melhor experiência no site, habilite seu
-			JavaScript</noscript>
-		<div class="contato-titulo ">Produtos e Serviços</div>
-		<div class="jumbotron">
-			<p class="lead"></p>
-		</div>
+<div id="produtos-servicos">
+	<div class="container">
+		<!-- header -->
+		<h2 class="section_header">
+			<hr class="left visible-desktop">
+			<span>Features</span>
+			<hr class="right visible-desktop">
+		</h2>
 
-		<hr>
-
-		<div class="row-fluid marketing">
-			<div class="span6">
-
-				<h4>Web Marketing</h4>
-				<p>Divulgação do seu negócio através de Websites, Hotsites, SEO,
-					SEM e marketing nas redes sociais.</p>
-
+		<!-- feature list -->
+		<div class="row">
+			<div class="span4 feature">
+				<img src="img/feature1.jpg" alt="feature1" class="thumb" />
+				<h3>
+					<i class="i_cloud"></i>
+					Responsive clean theme
+				</h3>
+				<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have
+					suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+					believable.</p>
+				<a href="#" class="btn btn-default">more</a>
 			</div>
-
-			<div class="span6">
-				<h4>Sistemas sob medida</h4>
-				<p>Construímos sistemas adequados que agreguem valores ao seu
-					negócio.</p>
+			<div class="span4 feature">
+				<img src="img/feature2.jpg" alt="feature2" class="thumb" />
+				<h3>
+					<i class="i_chart"></i>
+					Responsive clean theme
+				</h3>
+				<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have
+					suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+					believable.</p>
+				<a href="#" class="btn btn-default">more</a>
+			</div>
+			<div class="span4 feature">
+				<img src="img/feature3.jpg" alt="feature3" class="thumb" />
+				<h3>
+					<i class="i_movil"></i>
+					Responsive clean theme
+				</h3>
+				<p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have
+					suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+					believable.</p>
+				<a href="#" class="btn btn-default">more</a>
 			</div>
 		</div>
-
-		<hr>
-		{% include 'footer.html' %}
 	</div>
-
-</body>
-</html>
+</div>

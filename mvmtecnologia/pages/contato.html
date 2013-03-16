@@ -1,59 +1,88 @@
-<html lang="pt_br" xmlns:fb="http://ogp.me/ns/fb#">
-<head>{% include 'head.html' %}
-<title>Contato :: MVM Tecnologia</title>
-</head>
-<body>
-	<script>
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id))
-				return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
 
-	<div class="container-narrow">
-		{% include 'menu.html' %}
-		<hr>
-		<noscript>Para sua melhor experiência no site, habilite seu
-			JavaScript</noscript>
-		<div class="contato-titulo ">Contato</div>
-		<div class="jumbotron">
-			<div class="alert msgContato" id="msgaviso" >
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				<label id="labelwanind"></label>
-			</div>
-
-			<div class="alert alert-success msgContato" id="msgsuccess" >
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				Obrigado pelo contato, em breve estaremos respondendo!
-			</div>
-
-			<div class="contato-container">
-				<div class="container-narrow">
-					<select class="contato-select" id="ptype" style="height: 38px">
-						<option value="Pessoa Física" id="pf">Pessoa Física</option>
-						<option value="Pessoa Jurídica" id="pj">Pessoa Jurídica</option>
-					</select><br> <input type="text" name="nome" value="" id="nome"
-						size="40" class="contato-input" style="height: 38px"
-						placeholder="Nome"><br>
-
-					<input type="text" name="email" value="" id="email" size="40"
-						class="contato-input" style="height: 38px"
-						placeholder="Email"><br>
-
-					<textarea name="message" id="message" cols="40" style="height: 193px;"
-						class="contato-inputTextArea" placeholder="Mensagem"></textarea>
-					<br> <input type="submit" value="Enviar"
-						class="btn btn-success" id="enviarMsg" >
+<!-- starts testimonial -->
+<div id="testimonials">
+	<div class="container">
+		<div class="controls">
+			<hr>
+		</div>
+		<div class="phrases_wrapper">
+			<div class="phrase">
+				<div class="row">
+					<div class="span7">
+						<p class="testimony">
+							There are many variations of passages words which don't look even slightly passage of anything embarrassing
+							hidden in the middle.
+							<span>"</span>
+						</p>
+					</div>
+					<div class="span3 offset1">
+						<div class="pic">
+							<img src="img/pic1.jpg" alt="author" class="img-circle" />
+							<span class="name">Alejandra Galvan Castillo</span>
+							<span class="position">Bootstrap wizard</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		{% include 'footer.html' %}
-
 	</div>
-</body>
-</html>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span8">
+				<h3>From the Blog</h3>
+				<div class="blog_post">
+					<div class="row">
+						<div class="span2">
+							<a href="blog.html">
+								<img src="img/pic_blog.png" alt="post image" class="img-circle" />
+							</a>
+						</div>
+						<div class="span4">
+							<a href="blog.html" class="title"> Lorem Ipsum is simply dummy </a>
+							<div class="intro">There are many variations of passages of Lorem alteration in some form by injected look
+								even slightly believable.</div>
+							<div class="date">Oct 22. 2012</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span4 contact_us">
+				<h3>Contato</h3>
+				<form class="form-horizontal" action="/" method="post">
+					<div class="field">
+						<div class="label_field">
+							<label for="inputName">Nome</label>
+						</div>
+						<input type="text" id="inputName"  name="inputName"/>
+					</div>
+
+					<div class="field">
+						<div class="label_field">
+							<label for="inputEmail">Email</label>
+						</div>
+						<input type="text" id="inputEmail" name="inputEmail" />
+					</div>
+
+					<div class="field">
+						<div class="label_field">
+							<label for="inputCity">Cidade</label>
+						</div>
+						<input type="text" id="inputCity"  name="inputCity"/>
+					</div>
+
+					<div class="field">
+						<div class="label_field">
+							<label for="inputComment">Comentário</label>
+						</div>
+						<textarea name="comments"   id="comments"></textarea>
+					</div>
+					<button type="submit" class="btn">Send</button>
+				</form>
+			</div>
+		</div>
+		<hr>
+		{% include 'footer.html' %}
+	</div>

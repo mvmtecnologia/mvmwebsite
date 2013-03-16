@@ -1,51 +1,137 @@
 <html lang="pt_br" xmlns:fb="http://ogp.me/ns/fb#">
-<head>{% include 'head.html' %}
+<head>
+{% include 'head.html' %}
 <title>:: MVM Tecnologia</title>
 </head>
 <body>
 	<div id="fb-root"></div>
 	<script>
-		(function(d, s, id) {
+		(function(	d,
+					s,
+					id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id))
 				return;
 			js = d.createElement(s);
 			js.id = id;
 			js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+			fjs.parentNode.insertBefore(js,
+										fjs);
+		}(	document,
+			'script',
+			'facebook-jssdk'));
 	</script>
 
-	<div class="container-narrow">
-		{% include 'menu.html' %}
-		<hr>
-		<noscript>Para sua melhor experiência no site, habilite seu
-			JavaScript</noscript>
-		<div class="jumbotron">
-			<p class="lead">A MVM é uma empresa de TI com foco nas mais novas
-				tecnologias existentes no mercado para oferecer a seus clientes e
-				parceiros soluções tecnológicas eficientes e eficazes.</p>
-		</div>
+	<a href="#" class="scrolltop">
+		<span>up</span>
+	</a>
+	<!-- begins navbar -->
+	{% include 'menu.html'%}
+	<!-- ends navbar -->
 
-		<hr>
+	<div id="hero">
+		<div class="container">
+			<!-- starts carousel -->
+			<div class="row animated fadeInDown">
+				<div class="span12">
+					<div id="myCarousel" class="carousel slide">
+						<!-- carousel items -->
+						<div class="carousel-inner">
+							<!-- slide -->
+							<div class="active item slide1">
+								<div class="row">
+									<div class="span6">
+										<img src="img/slide1.png" alt="slide1" />
+									</div>
+									<div class="span4">
+										<h1>Responsive and Clean Wrapbootstrap Theme</h1>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+											alteration in some form, by injected humour, or randomised words which don't look.</p>
+										<a href="https://wrapbootstrap.com/theme/measure-responsive-business-theme-WB0D95984"
+											class="btn btn-success btn-large"
+										> Get Measure Now! </a>
+									</div>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="item slide2">
+								<div class="row">
+									<div class="span4 animated fadeInUpBig">
+										<h1>Fully responsive blog template</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+											dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="blog.html" class="btn btn-success btn-large"> Watch it now! </a>
+									</div>
+									<div class="span6 animated fadeInDownBig">
+										<img src="img/slide2.png" alt="slide2" />
+									</div>
+								</div>
+							</div>
 
-		<div class="row-fluid marketing">
-			<div class="span6">
-				<h4>Tecnologia e Inovação</h4>
-				<p>Estudo das mais modernas e seguras tecnologias para
-					aplicá-las em soluções que lhe atendam completamente.</p>
+
+							<div class="item slide3">
+								<div class="row">
+									<div class="span6">
+										<img src="img/slide3.png" alt="slide3" />
+									</div>
+									<div class="span4">
+										<h1>Responsive and Clean Wrapbootstrap Theme</h1>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+											alteration in some form, by injected humour, or randomised words which don't look.</p>
+										<a href="https://wrapbootstrap.com/theme/measure-responsive-business-theme-WB0D95984"
+											class="btn btn-success btn-large"
+										> Get Measure Now! </a>
+									</div>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="item slide4">
+								<div class="row">
+									<div class="span4 animated fadeInUpBig">
+										<h1>Fully responsive blog template</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+											dolore magna aliqua. Nisi ut aliquip ex ea commodo consequat.</p>
+										<a href="blog.html" class="btn btn-success btn-large"> Watch it now! </a>
+									</div>
+									<div class="span6 animated fadeInDownBig">
+										<img src="img/slide4.png" alt="slide4" />
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- Carousel nav -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					</div>
+				</div>
 			</div>
-
-			<div class="span6">
-				<h4>Eficiência e Eficácia</h4>
-				<p>Atender suas necessidades agregando valor no que é
-					desenvolvido com objetivos bem definidos.</p>
-			</div>
 		</div>
-		<hr>
-		{% include 'footer.html' %}
-
 	</div>
+	<div id="intro">
+		<div class="container">
+			<h1>Measure is a beautiful Wrapbootstrap theme for businesses and creative professionals.</h1>
+		</div>
+	</div>
+
+	<!-- produtos-servicos -->
+	{% include 'produtos-servicos.html' %}
+
+
+
+	<!-- starts portifolio -->
+	{% include 'portifolio.html'%}
+	
+
+	<!-- starts portifolio -->
+	{% include 'tecnologias.html'%}
+
+	
+	<!-- starts footer -->
+	{% include 'contato.html'%}
+</body>
+<div></div>
 
 </body>
 </html>

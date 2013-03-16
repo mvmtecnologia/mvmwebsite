@@ -10,36 +10,22 @@ class HomePage(RequestHandler):
     def get(self):
         self.response.out.write(template.render('pages/home.html', {}))
 
-
-class ContatoPage(RequestHandler):
-    def get(self): 
-        self.response.out.write(template.render('pages/contato.html', {}))
-    
     def post(self):
-            contato = Contato(nome=self.request.get('nome'),email=self.request.get('email'),
-                              message=self.request.get('message'),dataContato=datetime.datetime.now().date())
-            contato.save() 
-            self.response.out.write(template.render('pages/contato.html', {}))
-            #enviar email
+            contato = Contato(nome=self.request.get('inputName'), email=self.request.get('inputEmail'),
+                              message=self.request.get('comments'), dataContato=datetime.datetime.now().date())
+            if contato.isValid():
+                contato.save() 
             
-            #message=  mail.EmailMessage('mvmtecnologia@appspot.gserviceaccount.com', to='mvmtecnologia@gmail.com',
-            #subject=self.request.get('nome'), body=self.request.get('message'))
-            #message.Send()
+            return  self.redirect('/')
+            # enviar email
+            
+            # message=  mail.EmailMessage('mvmtecnologia@appspot.gserviceaccount.com', to='mvmtecnologia@gmail.com',
+            # subject=self.request.get('nome'), body=self.request.get('message'))
+            # message.Send()
         
-        
-
-class ProdutoServicoPage(RequestHandler):
-    def get(self):
-        self.response.out.write(template.render('pages/produtos-servicos.html', {}))
-
-
 
 application = webapp.WSGIApplication(
                                      [('/', HomePage),
-                                      ('/contato', ContatoPage),
-                                      ('/produtos-servicos', ProdutoServicoPage),
-                                      
-                                      
                                       ],
                                      debug=True)
 
