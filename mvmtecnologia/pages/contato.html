@@ -1,89 +1,79 @@
 
-<!-- starts testimonial -->
-<div id="testimonials">
-	<div class="container">
-		<div class="controls">
-			<hr>
-		</div>
-		<div class="phrases_wrapper">
-			<div class="phrase">
-				<div class="row">
-					<div class="span7">
-						<p class="testimony">
-							There are many variations of passages words which don't look even
-							slightly passage of anything embarrassing hidden in the middle. <span>"</span>
-						</p>
-					</div>
-					<div class="span3 offset1">
-						<div class="pic">
-							<img src="img/pic1.jpg" alt="author" class="img-circle" /> <span
-								class="name">Alejandra Galvan Castillo</span> <span
-								class="position">Bootstrap wizard</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <div id="footer">
 	<div class="container">
-		<div class="row">
-			<div class="span8">
-				<h3>From the Blog</h3>
-				<div class="blog_post">
-					<div class="row">
-						<div class="span2">
-							<a href="blog.html"> <img src="img/pic_blog.png"
-								alt="post image" class="img-circle" />
-							</a>
+		<!-- header -->
+		<div id="contact" class="contact_page">
+			<div class="row form">
+				<div class="span4 contact_us">
+					<h3>Contato</h3>
+					<form class="form-horizontal" action="/contato" method="post">
+						<div class="field">
+							<div class="label_field">
+								<label for="inputName">Nome</label>
+							</div>
+							<input type="text" id="inputName" name="inputName" />
 						</div>
-						<div class="span4">
-							<a href="blog.html" class="title"> Lorem Ipsum is simply
-								dummy </a>
-							<div class="intro">There are many variations of passages of
-								Lorem alteration in some form by injected look even slightly
-								believable.</div>
-							<div class="date">Oct 22. 2012</div>
+
+						<div class="field">
+							<div class="label_field">
+								<label for="inputEmail">Email</label>
+							</div>
+							<input type="text" id="inputEmail" name="inputEmail" />
 						</div>
+
+						<div class="field">
+							<div class="label_field">
+								<label for="inputCity">Cidade</label>
+							</div>
+							<input type="text" id="inputCity" name="inputCity" />
+						</div>
+
+						<div class="field">
+							<div class="label_field">
+								<label for="inputComment">Comentário</label>
+							</div>
+							<textarea name="comments" id="comments"></textarea>
+						</div>
+						<input type="submit" class="btn" value="Enviar">
+					</form>
+				</div>
+				<div class="span4 contact_us">
+					<h3>Endereço</h3>
+					<p>
+						Rua Campo de São Cristóvão, 111
+						<br>
+						São Cristóvão - Rio de Janeiro - RJ
+						<br>
+						CEP: 123456-123
+					</p>
+					<div class="info">
+						<i class="contact phone"></i>
+						+55 21 8407-4080
+					</div>
+					<div class="info">
+						<i class="contact email"></i>
+						contato@mvmtecnologia.com.br
+					</div>
+				</div>
+				<div class="span4 contact_us">
+					<h3>Mapa</h3>
+					<div class="gmaps">
+						<iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+							src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=S%C3%A3o+Crist%C3%B3v%C3%A3o,+Rio+de+Janeiro&amp;aq=0&amp;oq=s%C3%A3o+crist&amp;sll=-22.916032,-43.447416&amp;sspn=0.358601,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Crist%C3%B3v%C3%A3o,+Rio+de+Janeiro&amp;t=m&amp;ll=-22.899976,-43.222189&amp;spn=0.02372,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"
+						></iframe>
+						<br />
+						<small>
+							<a
+								href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=S%C3%A3o+Crist%C3%B3v%C3%A3o,+Rio+de+Janeiro&amp;aq=0&amp;oq=s%C3%A3o+crist&amp;sll=-22.916032,-43.447416&amp;sspn=0.358601,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=S%C3%A3o+Crist%C3%B3v%C3%A3o,+Rio+de+Janeiro&amp;t=m&amp;ll=-22.899976,-43.222189&amp;spn=0.02372,0.025749&amp;z=14&amp;iwloc=A" target="_brank"
+								style="color: #FFFFFF; text-align: left"
+							>Exibir mapa ampliado</a>
+						</small>
 					</div>
 				</div>
 			</div>
-			<div class="span4 contact_us">
-				<h3>Contato</h3>
-				<form class="form-horizontal" action="/contato" method="post">
-					<div class="field">
-						<div class="label_field">
-							<label for="inputName">Nome</label>
-						</div>
-						<input type="text" id="inputName" name="inputName" />
-					</div>
-
-					<div class="field">
-						<div class="label_field">
-							<label for="inputEmail">Email</label>
-						</div>
-						<input type="text" id="inputEmail" name="inputEmail" />
-					</div>
-
-					<div class="field">
-						<div class="label_field">
-							<label for="inputCity">Cidade</label>
-						</div>
-						<input type="text" id="inputCity" name="inputCity" />
-					</div>
-
-					<div class="field">
-						<div class="label_field">
-							<label for="inputComment">Comentário</label>
-						</div>
-						<textarea name="comments" id="comments"></textarea>
-					</div>
-					<input type="submit" class="btn" value="Enviar">
-				</form>
-			</div>
 		</div>
-		<hr>
-		{% include 'footer.html' %}
 	</div>
+
+	<hr>
+	{% include 'footer.html' %}
+</div>
