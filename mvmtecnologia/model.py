@@ -25,11 +25,13 @@ class Contato(db.Model):
      
     
     def enviarEmail(self):
-            logging.info('enviando email')
-            mail.send_mail(sender="mvmtecnologia@gmail.com",
-            to="solivavinicius@gmail.com>",
+            logging.info('enviando email..')
+            mail.send_mail(sender="contato@mvmtecnologia.com.br",
+            to=self.email,
             subject="Contato MVMTecnologia",
-            body=self.mensagem)    
+            body='''Muito obrigado por entrar em contato conosco,
+                    em breve estaremos retornando.
+                 ''')    
             
             
             
