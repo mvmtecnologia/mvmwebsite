@@ -1,0 +1,113 @@
+body{
+	background-image:url('../img/gridme.png');
+	font-family: 'Droid Sans',Arial,Lucida Sans,sans-serif !important;
+}
+
+#top{
+padding-top:80px;
+}
+#header h1{
+	background-image:url('../img/logo.png');
+	text-indent:-99999px;
+	width:259px;
+	height:56px;
+	float:left;
+}
+#header .label{
+	float:right;
+	margin-top:20px;
+}
+#header a:hover{
+	color:white;
+	text-decoration:none;
+	cursor:pointer;
+}
+#main_body{
+	background:white;
+	border-radius:4px 4px 0 0;
+	min-height:300px;
+	border:1px solid #ddd;
+	border-bottom:0px;
+}
+#main_body .padding{
+	margin:30px 40px;
+	
+}
+#main_body p{
+	font-family: 'Droid Sans',Arial,Lucida Sans,sans-serif !important;
+	text-align:center;	
+}
+.tagline{
+	color:#a5a5a5;
+	font-size: 18px;
+	line-height:22px;
+		
+}
+/*Twitter widget*/
+#latest_twitter{
+	padding-top:60px;
+}
+
+.twitter_status p{
+	text-align:center;
+}
+.twitter_status{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#f4f4f4;
+	padding:10px 15px;
+	border:1px solid #eaeaea;
+	color:#424242;
+	text-align:center;
+}
+.twitter_title{
+	font-size:14px !important;	
+	color:#bdbdbd;
+}
+.twitter_title img{
+	margin-right:6px;
+}
+.twitter_status p{
+	font-size:13px !important;
+}
+/*Email subscribe Section*/
+#subscribe_section{
+	background:#f4f4f4;
+	border-radius:0px 0px 4px 4px;
+	border:1px solid #dad8d8;
+	height:65px;
+	margin-bottom:50px;
+}
+#subscribe_section .padding{
+	padding:16px 10px;
+}
+.subscribe .input_custom{
+	height:25px;
+	width:638px;
+}
+.subscribe .signup_btn{
+	position: relative;
+	bottom: 5px;
+	margin-left:10px;
+}
+#footer{
+	color:#929292;
+	text-align:center;
+}
+#footer p{
+
+	font-size:12px !important;
+}
+#footer a{
+	color:#929292;
+	margin-left:5px;
+	
+}
+/*Generic classes*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
