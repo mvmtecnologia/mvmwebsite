@@ -1,5 +1,5 @@
 body{
-	background-image:url('../img/gridme.png');
+	background-image:url('/img/gridme.png');
 	font-family: 'Droid Sans',Arial,Lucida Sans,sans-serif !important;
 }
 
@@ -7,7 +7,7 @@ body{
 padding-top:80px;
 }
 #header h1{
-	background-image:url('../img/logo.png');
+	background-image:url('/img/logo.png');
 	text-indent:-99999px;
 	width:259px;
 	height:56px;
