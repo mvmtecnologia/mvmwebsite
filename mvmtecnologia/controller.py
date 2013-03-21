@@ -13,23 +13,32 @@ class HomeHandler(RequestHandler):
    
 
 class ContatoHandler(RequestHandler):
-    
+    emailHelper=None
+          
     def post(self):
-            contato = Contato(nome=self.request.get('inputName'), email=self.request.get('inputEmail'),
-                              mensagem=self.request.get('comments'), dataContato=datetime.datetime.now().date())
+            if self.request.get('inputEmail'):
+                self.emailHelper = self.request.get('inputEmail');
+                
+            contato = Contato(nome=self.request.get('inputName'),
+                              email=self.emailHelper,
+                              mensagem=self.request.get('comments'), 
+                              dataContato=datetime.datetime.now().date())
             
             if contato.isValid():
                 contato.put() 
                 contato.enviarEmail()
-                 
-            return  self.redirect('/')
-             
+        
+                return  self.redirect('/')
+            else:
+                #TODO:melhorar isso.
+                return  self.redirect('/')
+                
            
         
 
 application = webapp.WSGIApplication(
                                      [('/', HomeHandler),
-                                      ('/contato', ContatoHandler),],
+                                      ('/contato', ContatoHandler), ],
                                      debug=True)
 
 def main():
