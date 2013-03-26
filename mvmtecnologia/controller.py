@@ -24,8 +24,8 @@ import datetime
 class HomeHandler(RequestHandler):
     def get(self):
         #TODO:alterar isso quando for fazer o deploy em producaoo
-        self.response.out.write(template.render('pages/em-breve.html', {}))
-        #self.response.out.write(template.render('pages/home.html', {}))
+        #self.response.out.write(template.render('pages/em-breve.html', {}))
+        self.response.out.write(template.render('pages/home.html', {}))
 
    
 
