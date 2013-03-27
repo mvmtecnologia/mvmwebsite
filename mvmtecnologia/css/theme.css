@@ -527,7 +527,7 @@ input[type="color"]:focus,
 	float: left;
 }
 #footer .copyright .social {
-	margin-top: 8px;
+	margin-top: 15px;
 	float: left;
 	margin-left: 20px;		
 	border-radius: 22px;
@@ -535,17 +535,7 @@ input[type="color"]:focus,
 #footer .copyright .social:hover {
 	background-color: #1A1E25;
 }
-#footer .copyright .social.fb {
-	padding: 9px 15px 3px 15px;
-}
-#footer .copyright .social.tw {
-	margin-top: 10px;
-	padding: 11px 8px 5px 8px;
-}
-#footer .copyright .social.yt {
-	padding: 8px 8px 5px 8px;
-	margin-top: 10px;
-}
+
 #footer .copyright .copy p {
 	margin-top: 20px;
 }
