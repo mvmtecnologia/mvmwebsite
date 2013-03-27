@@ -11,7 +11,7 @@ handlers:
 - url: /img
   static_dir: img
 
-- url: /.*
+- url: /.* 
   script: controller.py
 
 
