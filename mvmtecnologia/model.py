@@ -33,9 +33,7 @@ class Contato(db.Model):
             mail.send_mail(sender="contato@mvmtecnologia.com.br",
             to=self.email,
             subject="Contato MVMTecnologia",
-            body='''Muito obrigado por entrar em contato conosco,
-                    em breve estaremos retornando.
-                 ''')    
+            body='''Muito obrigado por entrar em contato conosco, em breve estaremos retornando.''')    
             
             
             
