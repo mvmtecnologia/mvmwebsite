@@ -1,4 +1,3 @@
-from google.appengine.api import mail
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from google.appengine.ext.webapp._webapp25 import RequestHandler
@@ -15,8 +14,6 @@ Copyright (C) 2013 MVM Tecnologia, Inc.
  
 class HomeHandler(RequestHandler):
     def get(self):
-        #TODO:alterar isso quando for fazer o deploy em producaoo
-        #self.response.out.write(template.render('pages/em-breve.html', {}))
         self.response.out.write(template.render('pages/home.html', {}))
 
    
